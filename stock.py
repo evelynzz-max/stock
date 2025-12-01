@@ -27,10 +27,10 @@ df["ticker"] = df["Stock Ticker"].str.strip()
 # ============================================================
 # API Clients
 # ============================================================
-MASSIVE_API_KEY = 
+MASSIVE_API_KEY = st.secrets["MASSIVE_API_KEY"]
 massive = RESTClient(MASSIVE_API_KEY)
 
-DEEPSEEK_KEY = 
+DEEPSEEK_KEY = st.secrets["DEEPSEEK_API_KEY"]
 ai = OpenAI(api_key=DEEPSEEK_KEY, base_url="https://api.deepseek.com/v1")
 
 
